@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package modelos;
 
 import entidades.Clientes;
@@ -14,14 +9,10 @@ import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
 
-/**
- *
- * @author Leonardo
- */
 @Stateless
 public class ClientesFacade extends AbstractFacade<Clientes> {
 
-    @PersistenceContext(unitName = "Passagens-ejbPU")
+    @PersistenceContext(unitName = "Livros-ejbPU")
     private EntityManager em;
 
     @Override
